@@ -12,11 +12,10 @@
     ],
     "require": {
         "php": "^7.1|^8.0",
-        "php-http/httplug": "^2.0",
+        "php-http/httplug": "dev-v2.2.0-with-promise.cancel",
         "react/http": "^1.0",
         "react/event-loop": "^1.2",
-        "php-http/discovery": "^1.0",
-        "php-http/promise":"dev-master"
+        "php-http/discovery": "^1.0"
     },
     "require-dev": {
         "php-http/client-integration-tests": "^3.0",
@@ -25,9 +24,9 @@
     },
     "repositories": [
         {
-            "only": ["php-http/promise"],
+            "only": ["php-http/httplug"],
             "type": "vcs",
-            "url": "https://github.com/tolgaulas/promise"
+            "url": "https://github.com/tolgaulas/httplug"
         }        
     ], 
     "provide": {
